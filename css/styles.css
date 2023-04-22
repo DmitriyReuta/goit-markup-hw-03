@@ -147,13 +147,14 @@ img {
 }
 
 .hero {
-  display: f;
   min-width: 1440px;
   min-height: 600px;
   background-color: var(--main-color);
   text-align: center;
   align-self: center;
   margin-bottom: 120px;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .hero-title {
   color: #ffffff;
@@ -190,15 +191,17 @@ img {
 }
 
 .about {
-  margin-bottom: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .about-list {
   display: flex;
+  gap: 24px;
 }
 
-.about-list .about-item:not(:last-child) {
-  margin-right: 24px;
+.about-list .about-item {
+  width: calc((100% - 3 * 24px) / 4);
 }
 
 .about-text {
@@ -215,7 +218,7 @@ img {
 }
 
 .work {
-  margin-bottom: 120px;
+  padding-bottom: 120px;
 }
 
 .work-list {
@@ -245,11 +248,20 @@ img {
 
 .team {
   background-color: var(--light-color);
-  margin-bottom: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .team-list {
   display: flex;
+}
+
+.container-mark {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .list-item {
@@ -322,10 +334,12 @@ img {
   min-width: 1440px;
   height: 312px;
   align-self: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
-.footer > .text-link {
-  display: flex;
+.container > .text-link {
+  display: inline-block;
   justify-content: center;
   color: var(--btn-color);
   font-family: 'Raleway', sans-serif;
@@ -333,7 +347,7 @@ img {
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  margin-left: 156px;
+  margin-bottom: 16px;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -344,26 +358,24 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  width: 264px;
+  max-width: 264px;
   height: 72px;
 }
 /* Portfolio */
-.portfolio-header {
-  margin-bottom: 96px;
+.first-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
 
 .filter-list {
   display: flex;
   justify-content: center;
+  gap: 24px;
   margin-bottom: 72px;
 }
 
 .filter-item {
   text-decoration: none;
-}
-
-.filter-item:not(:last-child) {
-  margin-right: 24px;
 }
 
 .project-card-list {
