@@ -127,12 +127,13 @@ img {
 }
 
 .address-section {
-  font-style: normal;
   display: flex;
+  align-items: center;
   margin-left: auto;
 }
 
 .address-section .address-link {
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   color: var(--p-color);
@@ -166,13 +167,16 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 48px;
-  width: 496px;
+  max-width: 496px;
 }
 .hero-button {
-  display: flex;
+  display: block;
   font-family: 'Roboto', sans-serif;
   color: var(--white-color);
   background-color: var(--btn-color);
+  min-width: 169px;
+  height: 56px;
+  border: none;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -200,7 +204,7 @@ img {
   gap: 24px;
 }
 
-.about-list .about-item {
+.about-list > .about-item {
   width: calc((100% - 3 * 24px) / 4);
 }
 
