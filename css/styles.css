@@ -204,7 +204,7 @@ img {
   gap: 24px;
 }
 
-.about-list > .about-item {
+.about-item {
   width: calc((100% - 3 * 24px) / 4);
 }
 
@@ -258,10 +258,13 @@ img {
 
 .team-list {
   display: flex;
+  border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 72px) / 4);
 }
 
 .container-mark {
-  display: flex;
+  display: block;
+  text-align: center;
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
@@ -290,13 +293,18 @@ img {
   margin-bottom: 72px;
 }
 
-.team-title {
+.container-mark > .team-title {
+  text-align: center;
   color: var(--main-color);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
+.team-text {
+  text-align: center;
 }
 
 .filters-btn {
