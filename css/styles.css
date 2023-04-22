@@ -251,6 +251,7 @@ img {
 
 .team {
   background-color: var(--light-color);
+  padding-top: 120px;
   padding-bottom: 120px;
 }
 
