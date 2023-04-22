@@ -27,7 +27,7 @@ ul {
   padding: 0;
 }
 
-.conteiner {
+.container {
   width: 1158px;
   margin-left: auto;
   margin-right: auto;
@@ -48,10 +48,12 @@ img {
 
 .nav {
   display: flex;
+  align-items: center;
 }
 
 .nav-list {
   display: flex;
+  gap: 40px;
 }
 
 .nav-list .nav-item {
@@ -64,6 +66,10 @@ img {
 
 .address-list .item:not(:last-child) {
   margin-right: 40px;
+}
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .header-link {
