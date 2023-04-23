@@ -152,7 +152,6 @@ img {
   background-color: var(--main-color);
   text-align: center;
   align-self: center;
-  margin-bottom: 120px;
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -398,6 +397,15 @@ img {
   margin-right: 0px;
 }
 
-.hidden {
-  visibility: hidden;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
